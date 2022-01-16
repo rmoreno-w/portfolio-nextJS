@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import { Container } from '../src/components/Container';
 import { PageHeading } from '../src/components/PageHeading';
-import { useEffect, useState } from 'react';
+import useWindowWidth from '../src/hooks/useWindowWidth';
 
 export default function About() {
-    const width = window.screen.width;
+    const width = useWindowWidth();
 
     return (
         <Container>
@@ -14,7 +14,7 @@ export default function About() {
                     <figcaption className='text-sm text-center mb-4 font-extralight'>
                         Smiling never hurted anyone, right?
                     </figcaption>
-                    <div className='-mx-6 relative smilingPic sm:-mx-16 desktop:m-0 desktop:h-[536px] desktop:w-[536px]'>
+                    <div className='-mx-6 relative smilingPic sm:-mx-16 desktop:m-0 desktop:h-[400px] desktop:w-[400px] large:h-[536px] large:w-[536px]'>
                         <Image
                             alt='Foto Sorrindo'
                             src='/smiling photo.jpeg'

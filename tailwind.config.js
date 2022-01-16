@@ -9,6 +9,7 @@ module.exports = {
             CursiveFont: '"CursiveFont"',
         },
         fontSize: {
+            sm: ['0.8rem'],
             base: ['16px', '24px'],
             lg: ['1.25rem'],
             xl: ['1.5625rem'],
@@ -20,6 +21,7 @@ module.exports = {
         extend: {
             screens: {
                 desktop: '1200px',
+                large: '1450px',
                 // Max container width = 1520 + 7em margin eachside (7*20px = 140px, 280 px total) = 1800
                 largest: '1800px',
             },
