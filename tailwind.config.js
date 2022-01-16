@@ -20,6 +20,8 @@ module.exports = {
         extend: {
             screens: {
                 desktop: '1200px',
+                // Max container width = 1520 + 7em margin eachside (7*20px = 140px, 280 px total) = 1800
+                largest: '1800px',
             },
             colors: {
                 projectPurple: '#9448bc',
