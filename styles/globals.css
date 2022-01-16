@@ -38,3 +38,23 @@ a {
 .purple-Shadow {
     box-shadow: 5px 5px 20px rgba(148, 72, 188, 0.4);
 }
+
+.smilingPic {
+    height: max(280px, 45vh);
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .smilingPic {
+        height: max(340px, 45vh);
+    }
+}
+
+@media (min-width: 1200px) {
+    .smilingPicContainer {
+        height: 536px;
+    }
+}
+
+.has-tooltip:hover .tooltip {
+    @apply visible;
+}
