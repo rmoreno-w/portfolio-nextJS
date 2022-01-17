@@ -58,3 +58,15 @@ a {
 .has-tooltip:hover .tooltip {
     @apply visible;
 }
+
+.cardImage:hover div {
+    @apply visible;
+}
+
+.cardImage:hover div p {
+    @apply -translate-y-20;
+}
+
+.maxHeightForProjectImageMobile {
+    height: max(280px, 45vh);
+}

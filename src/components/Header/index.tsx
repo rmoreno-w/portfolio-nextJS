@@ -11,7 +11,7 @@ export function Header() {
     return (
         <header
             className='sticky top-0 right-0 left-0 z-10 h-20 sm:h-[100px]
-            flex justify-between items-center px-8 sm:px-20 desktop:px-28 
+            flex justify-between items-center px-8 sm:px-12 desktop:px-28 
             bg-projectWhite border border-projectBlack-[10] rounded-10 purple-Shadow'
         >
             <button>
