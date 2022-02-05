@@ -1,43 +1,31 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import useWindowWidth from '../../hooks/useWindowWidth';
 
 type ArticleProps = {
     mirroredArcticle?: boolean;
+    page: string;
 };
 
-export function ArcticleLink({ mirroredArcticle }: ArticleProps) {
-    const width = useWindowWidth();
-
+export function ArcticleLink({ mirroredArcticle, page }: ArticleProps) {
     return (
         <article
-            className={`flex flex-col gap-6 sm:gap-8 sm:max-h-[310px]  desktop:max-h-fit desktop:gap-12 ${
-                mirroredArcticle ? 'sm:flex-row-reverse' : 'sm:flex-row'
-            }`}
+            className={`flex flex-col gap-6 sm:gap-12 sm:justify-between group transition hover:shadow-xl hover:shadow-projectPurple/50 hover:cursor-pointer
+                        rounded-md ${mirroredArcticle ? 'sm:flex-row-reverse' : 'sm:flex-row'}`}
         >
-            <Link href='/'>
+            <Link href={`/projects/${page}`}>
                 <div
-                    className='-mx-6 maxHeightForProjectImageMobile relative sm:m-0 sm:w-1/2 sm:max-h-[310px] desktop:max-h-[570px]
-                hover:cursor-pointer cardImage'
+                    className='-mx-6 maxHeightForProjectImageMobile relative sm:m-0 sm:aspect-[4/3] sm:w-[55%] sm:max-w-[500px] sm:h-auto
+                    sm:justify-between'
                 >
                     <Image src='/Pic Group.png' alt='' layout='fill' aria-describedby='1' />
-
-                    {width > 1200 && (
-                        <div
-                            className='invisible w-full h-full bg-projectBlack/90 px-12 top-0 relative
-                                       flex flex-col items-center justify-center transition-opacity duration-300'
-                        >
-                            <p className='text-projectWhite font-bold absolute top-1/2 left-12 max-w-[90%] transition-transform -translate-x-6 duration-200'>
-                                In this project, I was taking a short course where I was getting to know React. It is a
-                                platform inspired in Netflix meant to be a repository of videos of my personal interest
-                            </p>
-                        </div>
-                    )}
                 </div>
             </Link>
-            <h2 id='1' className='self-center sm:text-center sm:w-1/2 '>
-                Personal Portfolio
-            </h2>
+            <div className='self-center sm:text-center grow'>
+                <h2 id='1' className='font-bold'>
+                    Personal Portfolio
+                </h2>
+                <h3 className='inline'>Role:</h3> <span className='text-projectPurple'>Developer</span>
+            </div>
         </article>
     );
 }

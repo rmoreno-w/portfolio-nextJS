@@ -18,17 +18,17 @@ export function Socials() {
                 <Mail className='text-xl' />{' '}
                 <span
                     onClick={copyMail}
-                    className='hover:bg-projectPurple hover:text-projectWhite rounded transition-colors duration-300 relative has-tooltip px-2'
+                    className='hover:bg-projectPurple hover:text-projectWhite rounded transition-colors duration-300 relative px-2 group'
                 >
                     {' '}
                     rmoreno.w@gmail.com
                     <span
-                        className={`tooltip transition duration-150 invisible absolute top-0 z-10 px-2 py-1 -mt-1 text-sm leading-tight text-white transform -translate-x-full -translate-y-full bg-projectBlack rounded shadow-md before:absolute before:top-full before:left-1/2 before:border-8 before:border-transparent before:border-t-projectBlack ${
-                            width > 1200 ? ' w-28' : 'w-16'
+                        className={`tooltip transition duration-150 invisible absolute top-0 z-10 px-2 py-1 -mt-1 text-sm leading-tight text-white transform -translate-x-full -translate-y-full bg-projectBlack rounded shadow-md before:absolute before:top-full before:left-1/2 before:border-8 before:border-transparent before:border-t-projectBlack group-hover:visible ${
+                            width > 1200 ? ' w-24' : 'w-16'
                         }`}
                     >
                         {' '}
-                        {width > 1200 ? 'Click to copy!' : 'Copied'}
+                        {width > 1200 ? 'Click to copy!' : 'Copied!'}
                     </span>
                 </span>
             </div>

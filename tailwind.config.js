@@ -20,13 +20,14 @@ module.exports = {
         },
         extend: {
             screens: {
-                desktop: '1200px',
+                desktop: '1250px',
                 large: '1450px',
                 // Max container width = 1520 + 7em margin eachside (7*20px = 140px, 280 px total) = 1800
                 largest: '1800px',
             },
             colors: {
                 projectPurple: '#9448bc',
+                projectPurpleLighter: '#ae54de',
                 projectGreen: '#3ddd78',
                 projectWhite: '#f5f5fa',
                 projectBlack: '#343434',

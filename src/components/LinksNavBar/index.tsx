@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 export function LinksNavBar() {
     const router = useRouter();
     const activeRoute = router.pathname;
+    console.log(router);
 
     return (
         <nav className='flex'>
@@ -47,7 +48,11 @@ export function LinksNavBar() {
                 <a
                     className={`relative text-projectBlack font-extralight text-sm mx-4
                     hover:underline decoration-2 underline-offset-4 decoration-projectPurple
-                    ${router.pathname == '/projects' ? 'border-b-2 border-b-projectGreen hover:no-underline' : ''}`}
+                    ${
+                        activeRoute.split('/')[1] == 'projects'
+                            ? 'border-b-2 border-b-projectGreen hover:no-underline'
+                            : ''
+                    }`}
                 >
                     Projects
                 </a>

@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
 import Logo from '../../../public/Logo.svg';
 import { HamburguerMenu } from '../HamburguerMenu';
 import { LinksNavBar } from '../LinksNavBar';
