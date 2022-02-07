@@ -2,30 +2,40 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 type ArticleProps = {
+    imageIndex: number;
+    imageName: string;
     mirroredArcticle?: boolean;
-    page: string;
+    pageLink: string;
+    pageName: string;
+    roles: string;
 };
 
-export function ArcticleLink({ mirroredArcticle, page }: ArticleProps) {
+export function ArcticleLink({ imageIndex, imageName, mirroredArcticle, pageLink, pageName, roles }: ArticleProps) {
     return (
-        <article
-            className={`flex flex-col gap-6 sm:gap-12 sm:justify-between group transition hover:shadow-xl hover:shadow-projectPurple/50 hover:cursor-pointer
-                        rounded-md ${mirroredArcticle ? 'sm:flex-row-reverse' : 'sm:flex-row'}`}
-        >
-            <Link href={`/projects/${page}`}>
-                <div
-                    className='-mx-6 maxHeightForProjectImageMobile relative sm:m-0 sm:aspect-[4/3] sm:w-[55%] sm:max-w-[500px] sm:h-auto
-                    sm:justify-between'
-                >
-                    <Image src='/Pic Group.png' alt='' layout='fill' aria-describedby='1' />
+        <Link href={`/projects/${pageLink}`}>
+            <a
+                className={`-mx-6 sm:m-0 flex flex-col gap-8 sm:gap-12 desktop:gap-16 transition hover:shadow-xl hover:shadow-projectPurple/50 hover:cursor-pointer
+                        rounded-md overflow-hidden ${mirroredArcticle ? 'sm:flex-row-reverse' : 'sm:flex-row'}`}
+            >
+                <div className='sm:max-w-[55%] leading-[0]'>
+                    <Image
+                        src={`/${imageName}`}
+                        alt=''
+                        layout='intrinsic'
+                        quality={100}
+                        width={1198}
+                        height={635.75}
+                        aria-describedby={`${imageIndex}`}
+                    />
                 </div>
-            </Link>
-            <div className='self-center sm:text-center grow'>
-                <h2 id='1' className='font-bold'>
-                    Personal Portfolio
-                </h2>
-                <h3 className='inline'>Role:</h3> <span className='text-projectPurple'>Developer</span>
-            </div>
-        </article>
+
+                <div className='self-center sm:text-center grow'>
+                    <h2 id={`${imageIndex}`} className='font-bold'>
+                        {`${pageName}`}
+                    </h2>
+                    <h3 className='inline'>Role:</h3> <span className='text-projectPurple'>{`${roles}`}</span>
+                </div>
+            </a>
+        </Link>
     );
 }

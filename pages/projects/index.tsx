@@ -8,10 +8,36 @@ export default function Home() {
             <PageHeading color='text-projectPurple'>Projects</PageHeading>
 
             <div className='flex w-full flex-col gap-8 sm:gap-12 desktop:gap-16'>
-                <ArcticleLink page='oldPersonalWebsite' />
-                <ArcticleLink page='' mirroredArcticle />
-                <ArcticleLink page='' />
-                <ArcticleLink page='' mirroredArcticle />
+                <ArcticleLink
+                    imageIndex={1}
+                    imageName='old_website_banner.png'
+                    pageLink='oldPersonalWebsite'
+                    pageName='Old Personal Website'
+                    roles='Developer and UI Designer'
+                />
+                <ArcticleLink
+                    imageIndex={2}
+                    imageName='rodrigo_flix.png'
+                    pageLink='rodrigoFlix'
+                    pageName='RodrigoFlix'
+                    roles='Developer'
+                    mirroredArcticle
+                />
+                <ArcticleLink
+                    imageIndex={3}
+                    imageName='old_website_banner.png'
+                    pageLink='oldPersonalWebsite'
+                    pageName=''
+                    roles=''
+                />
+                <ArcticleLink
+                    imageIndex={4}
+                    imageName='old_website_banner.png'
+                    pageLink='oldPersonalWebsite'
+                    pageName=''
+                    roles=''
+                    mirroredArcticle
+                />
             </div>
         </Container>
     );
