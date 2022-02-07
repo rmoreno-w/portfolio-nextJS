@@ -25,17 +25,17 @@ export default function Home() {
                 />
                 <ArcticleLink
                     imageIndex={3}
-                    imageName='old_website_banner.png'
-                    pageLink='oldPersonalWebsite'
-                    pageName=''
-                    roles=''
+                    imageName='sweden_quiz.png'
+                    pageLink='swedenQuiz'
+                    pageName='Sweden Quiz'
+                    roles='Developer and UI Designer'
                 />
                 <ArcticleLink
                     imageIndex={4}
                     imageName='old_website_banner.png'
-                    pageLink='oldPersonalWebsite'
-                    pageName=''
-                    roles=''
+                    pageLink='beats'
+                    pageName='Beats'
+                    roles='Developer and UI Designer'
                     mirroredArcticle
                 />
             </div>

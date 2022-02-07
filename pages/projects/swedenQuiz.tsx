@@ -4,15 +4,15 @@ import { PageHeading } from '../../src/components/PageHeading';
 import GitHub from '../../public/gitHub.svg';
 import LiveSiteLink from '../../public/external_link.svg';
 
-export default function rodrigoFlix() {
+export default function swedenQuiz() {
     return (
         <>
             <Container>
-                <PageHeading color='text-projectPurple'>RodrigoFlix</PageHeading>
+                <PageHeading color='text-projectPurple'>Sweden Quiz</PageHeading>
                 <div className='-mx-6 sm:-mx-16 desktop:mx-0'>
                     <Image
                         alt='Rodrigo Flix Banner'
-                        src='/rodrigo_flix.png'
+                        src='/sweden_quiz.png'
                         layout='intrinsic'
                         quality={100}
                         width={1198}
@@ -25,33 +25,34 @@ export default function rodrigoFlix() {
                 </h2>
 
                 <h2 className='self-start font-bold'>
-                    Role(s): <span className='font-normal'>Developer</span>
+                    Role(s): <span className='font-normal'>Developer and UI Designer</span>
                 </h2>
 
                 <h2 className='self-start font-bold'>
-                    Main Goal:{' '}
-                    <span className='font-normal'>
-                        Develop a platform inspired in Netflix that is a repository of videos of my personal interest
-                    </span>
+                    Main Goal: <span className='font-normal'>Develop a Quiz-App about a theme of my interest</span>
                 </h2>
 
                 <h2 className='self-start font-bold'>
                     Description:{' '}
                     <span className='font-normal'>
-                        Working in this project I’ve got my first contact with the React Lib. I learned the basics from
-                        React, CSS-in-JS (Styled Components) and project hosting during this 1 week course. The original
-                        project was written in JavaScript but lately I rewrote it with Typescript.
+                        This was also a project developed during a 1 week course, where I developed a quiz with
+                        questions about general facts from a country I find very interesting: Sweden 🇸🇪. I had the
+                        opportunity to expand my knowledge in React and got in contact with Next.JS and Framer-Motion
+                        for the first time while building the project.
                     </span>
                 </h2>
 
                 <h2 className='self-start font-bold'>
                     - Key concepts learned/worked:{' '}
-                    <span className='font-normal'>React, React Router, Styled Components, Hosting, Typescript.</span>
+                    <span className='font-normal'>
+                        SSG (Static Site Generation), SSR (Server-Side Rendering), ISR (Incremental Site Regeneration),
+                        Next.JS, Framer-Motion, Hosting.
+                    </span>
                 </h2>
 
                 <div className='flex justify-between gap-12'>
                     <a
-                        href='https://rmoreno-w.github.io/portfolio/'
+                        href='https://sweden-quiz-git-main-rmoreno-w.vercel.app/'
                         target='_blank'
                         rel='noopener noreferrer'
                         className='display flex flex-col gap-4 items-center group'
@@ -63,7 +64,7 @@ export default function rodrigoFlix() {
                     </a>
 
                     <a
-                        href='https://github.com/rmoreno-w/rodrigoflix'
+                        href='https://github.com/rmoreno-w/sweden-quiz'
                         target='_blank'
                         rel='noopener noreferrer'
                         className='display flex flex-col gap-4 items-center group'
