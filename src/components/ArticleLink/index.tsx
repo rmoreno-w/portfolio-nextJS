@@ -30,10 +30,11 @@ export function ArcticleLink({ imageIndex, imageName, mirroredArcticle, pageLink
                 </div>
 
                 <div className='self-center sm:text-center grow'>
-                    <h2 id={`${imageIndex}`} className='font-bold'>
+                    <h2 id={`${imageIndex}`} className='font-bold text-center'>
                         {`${pageName}`}
                     </h2>
-                    <h3 className='inline'>Role:</h3> <span className='text-projectPurple'>{`${roles}`}</span>
+                    <h3 className='inline text-center'>Role:</h3>{' '}
+                    <span className='text-projectPurple'>{`${roles}`}</span>
                 </div>
             </a>
         </Link>
