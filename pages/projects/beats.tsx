@@ -144,12 +144,12 @@ export default function BEATS() {
                     </p>
                 </div>
 
-                <div className='flex justify-between gap-12'>
+                <div className='grid grid-cols-3 gap-6 sm:gap-12'>
                     <a
                         href='http://beats-tau.vercel.app/'
                         target='_blank'
                         rel='noopener noreferrer'
-                        className='display flex flex-col gap-4 items-center group'
+                        className='display flex flex-col gap-4 items-center group grow'
                     >
                         <LiveSiteLink className='text-5xl' />{' '}
                         <span className='block  max-w-5xl group-hover:bg-projectPurple group-hover:text-projectWhite rounded transition-colors duration-300 px-2 text-center'>
@@ -161,7 +161,7 @@ export default function BEATS() {
                         href='https://www.figma.com/file/D7ghMyI92GfQpg8kuFhipE/BEATS?node-id=0%3A1'
                         target='_blank'
                         rel='noopener noreferrer'
-                        className='display flex flex-col gap-4 items-center group'
+                        className='display flex flex-col gap-4 items-center group grow'
                     >
                         <Figma className='text-5xl' />{' '}
                         <span className='block  max-w-5xl group-hover:bg-projectPurple group-hover:text-projectWhite rounded transition-colors duration-300 px-2 text-center'>
@@ -173,7 +173,7 @@ export default function BEATS() {
                         href='https://github.com/rmoreno-w/beats-next'
                         target='_blank'
                         rel='noopener noreferrer'
-                        className='display flex flex-col gap-4 items-center group'
+                        className='display flex flex-col gap-4 items-center group grow'
                     >
                         <GitHub className='text-5xl' />{' '}
                         <span className='block  max-w-5xl group-hover:bg-projectPurple group-hover:text-projectWhite rounded transition-colors duration-300 px-2 text-center'>

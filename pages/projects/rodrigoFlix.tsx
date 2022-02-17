@@ -40,18 +40,23 @@ export default function rodrigoFlix() {
                     <span className='font-normal'>
                         Working in this project I’ve got my first contact with the React Lib. I learned the basics from
                         React, CSS-in-JS (Styled Components) and project hosting during this 1 week course. The original
-                        project was written in JavaScript but lately I rewrote it with Typescript.
+                        project was written in JavaScript, but I rewrote it with 100% Typescript. Also, the original
+                        project used a fake database built on a JSON file. I rewrote its logic and deployed it on an
+                        Express server that now accesses the data through a MongoDB database that is hosted on their
+                        cloud platform (Atlas).
                     </span>
                 </h2>
 
                 <h2 className='self-start font-bold'>
                     - Key concepts learned/worked:{' '}
-                    <span className='font-normal'>React, React Router, Styled Components, Hosting, Typescript.</span>
+                    <span className='font-normal'>
+                        React, React Router, Styled Components, Hosting, Typescript, MongoDB Atlas, NodeJS, Express.
+                    </span>
                 </h2>
 
-                <div className='flex justify-between gap-12'>
+                <div className='grid grid-cols-2 gap-6 sm:gap-12'>
                     <a
-                        href='https://rmoreno-w.github.io/portfolio/'
+                        href='https://rodrigoflix-rmoreno-w.vercel.app/'
                         target='_blank'
                         rel='noopener noreferrer'
                         className='display flex flex-col gap-4 items-center group'

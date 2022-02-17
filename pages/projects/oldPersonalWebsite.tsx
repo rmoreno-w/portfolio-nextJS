@@ -48,7 +48,7 @@ export default function oldPersonalWebsite() {
                     </span>
                 </h2>
 
-                <div className='flex justify-between gap-12'>
+                <div className='grid grid-cols-2 gap-6 sm:gap-12'>
                     <a
                         href='https://rmoreno-w.github.io/portfolio/'
                         target='_blank'

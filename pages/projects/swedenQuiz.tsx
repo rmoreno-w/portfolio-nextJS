@@ -50,7 +50,7 @@ export default function swedenQuiz() {
                     </span>
                 </h2>
 
-                <div className='flex justify-between gap-12'>
+                <div className='grid grid-cols-2 gap-6 sm:gap-12'>
                     <a
                         href='https://sweden-quiz-git-main-rmoreno-w.vercel.app/'
                         target='_blank'
