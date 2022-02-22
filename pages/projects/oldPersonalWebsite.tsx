@@ -1,3 +1,5 @@
+import Head from 'next/head';
+
 import Image from 'next/image';
 import { Container } from '../../src/components/Container';
 import { PageHeading } from '../../src/components/PageHeading';
@@ -7,6 +9,10 @@ import LiveSiteLink from '../../public/external_link.svg';
 export default function oldPersonalWebsite() {
     return (
         <>
+            <Head>
+                <title>Old Personal Website | Rodrigo Moreno</title>
+            </Head>
+
             <Container>
                 <PageHeading color='text-projectPurple'>Old Personal Website</PageHeading>
                 <div className='-mx-6 sm:-mx-16 desktop:mx-0'>

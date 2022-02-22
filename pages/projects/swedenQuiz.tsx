@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import Head from 'next/head';
+
 import { Container } from '../../src/components/Container';
 import { PageHeading } from '../../src/components/PageHeading';
 import GitHub from '../../public/gitHub.svg';
@@ -7,6 +9,10 @@ import LiveSiteLink from '../../public/external_link.svg';
 export default function swedenQuiz() {
     return (
         <>
+            <Head>
+                <title>Sweden Quiz | Rodrigo Moreno</title>
+            </Head>
+
             <Container>
                 <PageHeading color='text-projectPurple'>Sweden Quiz</PageHeading>
                 <div className='-mx-6 sm:-mx-16 desktop:mx-0'>

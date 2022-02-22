@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import Head from 'next/head';
+
 import { Container } from '../../src/components/Container';
 import { PageHeading } from '../../src/components/PageHeading';
 import Figma from '../../public/figma.svg';
@@ -8,6 +10,10 @@ import LiveSiteLink from '../../public/external_link.svg';
 export default function BEATS() {
     return (
         <>
+            <Head>
+                <title>BEATS | Rodrigo Moreno</title>
+            </Head>
+
             <Container>
                 <PageHeading color='text-projectPurple'>BEATS</PageHeading>
                 <div className='-mx-6 sm:-mx-16 desktop:mx-0'>

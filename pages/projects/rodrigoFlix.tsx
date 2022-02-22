@@ -1,3 +1,5 @@
+import Head from 'next/head';
+
 import Image from 'next/image';
 import { Container } from '../../src/components/Container';
 import { PageHeading } from '../../src/components/PageHeading';
@@ -7,6 +9,10 @@ import LiveSiteLink from '../../public/external_link.svg';
 export default function rodrigoFlix() {
     return (
         <>
+            <Head>
+                <title>RodrigoFlix | Rodrigo Moreno</title>
+            </Head>
+
             <Container>
                 <PageHeading color='text-projectPurple'>RodrigoFlix</PageHeading>
                 <div className='-mx-6 sm:-mx-16 desktop:mx-0'>

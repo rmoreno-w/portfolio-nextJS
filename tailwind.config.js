@@ -31,6 +31,7 @@ module.exports = {
                 projectGreen: '#3ddd78',
                 projectWhite: '#f5f5fa',
                 projectBlack: '#343434',
+                projectRed: '#CC2936',
             },
         },
     },

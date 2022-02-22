@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 export function LinksNavBar() {
     const router = useRouter();
     const activeRoute = router.pathname;
-    console.log(router);
+    // console.log(router);
 
     return (
         <nav className='flex'>
