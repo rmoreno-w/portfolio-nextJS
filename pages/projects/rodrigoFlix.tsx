@@ -11,6 +11,10 @@ export default function rodrigoFlix() {
         <>
             <Head>
                 <title>RodrigoFlix | Rodrigo Moreno</title>
+                <meta
+                    name='description'
+                    content='More about a project I worked with during a 1 week course using React, Styled Components, Typescript, MongoDB Atlas, and Node.js (Express).'
+                />
             </Head>
 
             <Container>

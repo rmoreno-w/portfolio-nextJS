@@ -12,6 +12,10 @@ export default function BEATS() {
         <>
             <Head>
                 <title>BEATS | Rodrigo Moreno</title>
+                <meta
+                    name='description'
+                    content='More about a project I worked with for 2 months, where I created a style guide and some brand aspects, and developed and deployed it using Next.js, React, Typescript, Tailwind, and Framer-motion.'
+                />
             </Head>
 
             <Container>
@@ -58,7 +62,7 @@ export default function BEATS() {
 
                     <div className='-mx-6 sm:-mx-16 desktop:mx-0'>
                         <Image
-                            alt='BEATS Banner'
+                            alt='BEATS Low-fidelity prototypes'
                             src='/beats_low_fidelity.png'
                             layout='intrinsic'
                             quality={100}
@@ -87,7 +91,7 @@ export default function BEATS() {
 
                     <div className='-mx-6 sm:-mx-16 desktop:mx-0'>
                         <Image
-                            alt='BEATS Banner'
+                            alt='BEATS Style guide'
                             src='/beats_style_guide.png'
                             layout='intrinsic'
                             quality={100}
@@ -104,7 +108,7 @@ export default function BEATS() {
 
                     <div className='-mx-6 sm:-mx-16 desktop:mx-0'>
                         <Image
-                            alt='BEATS Banner'
+                            alt='BEATS Logo'
                             src='/beats.png'
                             layout='intrinsic'
                             quality={100}
@@ -117,13 +121,13 @@ export default function BEATS() {
                         Next, I worked on the low-fidelity prototypes to evolve them into the high-fidelity prototypes.
                         You can see some samples of these below or check the link to the Figma file on the bottom of the
                         page. To finish up, after they got approved by the stakeholders, the final step was to implement
-                        and deploy the project. For this task I used Next.JS, React, Typescript, Tailwind and
+                        and deploy the project. For this task I used Next.js, React, Typescript, Tailwind and
                         Framer-motion.
                     </p>
 
                     <div className='-mx-6 sm:-mx-16 desktop:mx-0'>
                         <Image
-                            alt='BEATS Banner'
+                            alt='BEATS High-fidelity prototypes'
                             src='/beats_high_fidelity.png'
                             layout='intrinsic'
                             quality={100}

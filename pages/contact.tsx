@@ -79,6 +79,7 @@ export default function Contact() {
         <>
             <Head>
                 <title>Contact | Rodrigo Moreno</title>
+                <meta name='description' content='Here you find my social networks, e-mail or send me a message.' />
             </Head>
 
             <Container>

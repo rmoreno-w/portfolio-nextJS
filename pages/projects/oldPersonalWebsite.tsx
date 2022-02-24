@@ -11,6 +11,10 @@ export default function oldPersonalWebsite() {
         <>
             <Head>
                 <title>Old Personal Website | Rodrigo Moreno</title>
+                <meta
+                    name='description'
+                    content='More about the first personal website I developed when I was learning HTML and CSS.'
+                />
             </Head>
 
             <Container>

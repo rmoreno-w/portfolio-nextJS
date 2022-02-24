@@ -11,6 +11,10 @@ export default function swedenQuiz() {
         <>
             <Head>
                 <title>Sweden Quiz | Rodrigo Moreno</title>
+                <meta
+                    name='description'
+                    content='More about a project I worked with during a 1 week course using Next.js, React, and Framer-Motion.'
+                />
             </Head>
 
             <Container>
@@ -43,7 +47,7 @@ export default function swedenQuiz() {
                     <span className='font-normal'>
                         This was also a project developed during a 1 week course, where I developed a quiz with
                         questions about general facts from a country I find very interesting: Sweden 🇸🇪. I had the
-                        opportunity to expand my knowledge in React and got in contact with Next.JS and Framer-Motion
+                        opportunity to expand my knowledge in React and got in contact with Next.js and Framer-Motion
                         for the first time while building the project.
                     </span>
                 </h2>
@@ -52,7 +56,7 @@ export default function swedenQuiz() {
                     - Key concepts learned/worked:{' '}
                     <span className='font-normal'>
                         SSG (Static Site Generation), SSR (Server-Side Rendering), ISR (Incremental Site Regeneration),
-                        Next.JS, Framer-Motion, Hosting.
+                        Next.js, Framer-Motion, Hosting.
                     </span>
                 </h2>
 

@@ -9,6 +9,10 @@ export default function Home() {
         <>
             <Head>
                 <title>Projects | Rodrigo Moreno</title>
+                <meta
+                    name='description'
+                    content='You can check some of my projects and learn more about my working process.'
+                />
             </Head>
 
             <Container>

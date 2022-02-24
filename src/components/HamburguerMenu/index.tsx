@@ -1,8 +1,12 @@
 import Link from 'next/link';
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 
 export function HamburguerMenu() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const router = useRouter();
+    const activeRoute = router.pathname;
 
     function menuClick() {
         setIsMenuOpen(!isMenuOpen);
@@ -36,21 +40,22 @@ export function HamburguerMenu() {
             >
                 <Link href='/'>
                     <a className='text-projectWhite font-bold' onClick={(e) => setIsMenuOpen(!isMenuOpen)}>
-                        Home
+                        {activeRoute == '/' ? <span className='text-projectGreen'>&gt;</span> : null} Home
                     </a>
                 </Link>
                 <Link href='/about'>
                     <a className='text-projectWhite font-bold' onClick={(e) => setIsMenuOpen(!isMenuOpen)}>
-                        About
+                        {activeRoute == '/about' ? <span className='text-projectGreen'>&gt;</span> : null} About
                     </a>
                 </Link>
                 <Link href='/contact'>
                     <a className='text-projectWhite font-bold' onClick={(e) => setIsMenuOpen(!isMenuOpen)}>
-                        Contact
+                        {activeRoute == '/contact' ? <span className='text-projectGreen'>&gt;</span> : null} Contact
                     </a>
                 </Link>
                 <Link href='/projects'>
                     <a className='text-projectWhite font-bold' onClick={(e) => setIsMenuOpen(!isMenuOpen)}>
+                        {activeRoute.includes('/projects') ? <span className='text-projectGreen'>&gt; </span> : null}
                         Projects
                     </a>
                 </Link>
