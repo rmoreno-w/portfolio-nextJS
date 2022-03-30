@@ -1,11 +1,10 @@
-import Image from 'next/image';
 import Head from 'next/head';
-
-import { Container } from '../../src/components/Container';
-import { PageHeading } from '../../src/components/PageHeading';
+import Image from 'next/image';
+import LiveSiteLink from '../../public/external_link.svg';
 import Figma from '../../public/figma.svg';
 import GitHub from '../../public/gitHub.svg';
-import LiveSiteLink from '../../public/external_link.svg';
+import { Container } from '../../src/components/Container';
+import { PageHeading } from '../../src/components/PageHeading';
 
 export default function BEATS() {
     return (
@@ -62,7 +61,7 @@ export default function BEATS() {
 
                     <div className='-mx-6 sm:-mx-16 desktop:mx-0'>
                         <Image
-                            alt='BEATS Low-fidelity prototypes'
+                            alt='BEATS Low-fidelity wireframes'
                             src='/beats_low_fidelity.png'
                             layout='intrinsic'
                             quality={100}
@@ -118,7 +117,7 @@ export default function BEATS() {
                     </div>
 
                     <p className='font-normal block'>
-                        Next, I worked on the low-fidelity prototypes to evolve them into the high-fidelity prototypes.
+                        Next, I worked on the low-fidelity wireframes to evolve them into the high-fidelity wireframes.
                         You can see some samples of these below or check the link to the Figma file on the bottom of the
                         page. To finish up, after they got approved by the stakeholders, the final step was to implement
                         and deploy the project. For this task I used Next.js, React, Typescript, Tailwind and
@@ -127,7 +126,7 @@ export default function BEATS() {
 
                     <div className='-mx-6 sm:-mx-16 desktop:mx-0'>
                         <Image
-                            alt='BEATS High-fidelity prototypes'
+                            alt='BEATS High-fidelity wireframes'
                             src='/beats_high_fidelity.png'
                             layout='intrinsic'
                             quality={100}
