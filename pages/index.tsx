@@ -38,7 +38,7 @@ export default function Home() {
                 <title>Rodrigo Moreno | Front-End Developer and UI Designer</title>
                 <meta
                     name='description'
-                    content='UI designer and Front-end developer, currently working with Next.js and react. Check my latest projects or contact me!'
+                    content='UI designer and Front-end developer, currently working with Next.js and React. Check my latest projects or contact me!'
                 />
             </Head>
 

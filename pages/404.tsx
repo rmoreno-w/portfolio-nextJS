@@ -1,7 +1,6 @@
 import Head from 'next/head';
-import { Container } from '../src/components/Container';
-import { PageHeading } from '../src/components/PageHeading';
 import Error404 from '../public/404.svg';
+import { Container } from '../src/components/Container';
 
 export default function Home() {
     return (

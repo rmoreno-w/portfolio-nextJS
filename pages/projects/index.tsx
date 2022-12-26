@@ -1,18 +1,15 @@
 import Head from 'next/head';
 
+import { ArcticleLink } from '../../src/components/ArticleLink';
 import { Container } from '../../src/components/Container';
 import { PageHeading } from '../../src/components/PageHeading';
-import { ArcticleLink } from '../../src/components/ArticleLink';
 
 export default function Home() {
     return (
         <>
             <Head>
                 <title>Projects | Rodrigo Moreno</title>
-                <meta
-                    name='description'
-                    content='You can check some of my projects and learn more about my working process.'
-                />
+                <meta name='description' content='Check some of my projects and learn more about my working process.' />
             </Head>
 
             <Container>

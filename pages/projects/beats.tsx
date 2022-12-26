@@ -13,7 +13,7 @@ export default function BEATS() {
                 <title>BEATS | Rodrigo Moreno</title>
                 <meta
                     name='description'
-                    content='More about a project I worked with for 2 months, where I created a style guide and some brand aspects, and developed and deployed it using Next.js, React, Typescript, Tailwind, and Framer-motion.'
+                    content='More about a project I worked with for 2 months, where I created a style guide, some brand aspects, developed and deployed it using Next.js, React, Typescript, Tailwind, and Framer-motion.'
                 />
             </Head>
 

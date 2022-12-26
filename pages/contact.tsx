@@ -1,16 +1,16 @@
-import { useState } from 'react';
 import axios from 'axios';
 import Head from 'next/head';
+import { useState } from 'react';
 
-import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
+import { useForm } from 'react-hook-form';
 
 import Leaves from '../public/Leaves.svg';
 import { Container } from '../src/components/Container';
-import { PageHeading } from '../src/components/PageHeading';
-import { Socials } from '../src/components/Socials';
 import { FormSendingButton } from '../src/components/FormSendingButton';
 import schema from '../src/components/FormSendingButton/formSchema';
+import { PageHeading } from '../src/components/PageHeading';
+import { Socials } from '../src/components/Socials';
 
 type formInputData = {
     name: string;
